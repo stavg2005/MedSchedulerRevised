@@ -150,21 +150,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Business Logic Layer\BusinessLogicLayer.csproj">
+    <ProjectReference Include="..\Core\SchedulingEngine\SchedulingEngine.csproj">
+      <Project>{3990b740-f80c-4a90-accd-7ecddbc48fbe}</Project>
+      <Name>SchedulingEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Business Logic Layer\BusinessLogicLayer.csproj">
       <Project>{8e299d3c-42ca-48ab-af77-d65d67f7ef14}</Project>
       <Name>BusinessLogicLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+    <ProjectReference Include="..\Data\DataAccessLayer\DataAccessLayer.csproj">
       <Project>{8be711f6-bf14-4f7f-881e-8874355284c8}</Project>
       <Name>DataAccessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Models\Models.csproj">
+    <ProjectReference Include="..\Data\Models\Models.csproj">
       <Project>{06a26786-2136-49b5-a134-7281a73d4966}</Project>
       <Name>Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SchedulingEngine\SchedulingEngine.csproj">
-      <Project>{3990b740-f80c-4a90-accd-7ecddbc48fbe}</Project>
-      <Name>SchedulingEngine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
